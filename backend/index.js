@@ -36,3 +36,8 @@ app.get("/movies", (req, res) => {
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });
+
+// how to run ??
+// enter node index.js
+// then after entreing into locatHost change the path as '/movies'
+
