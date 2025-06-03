@@ -9,7 +9,7 @@ export default function Footer()
    <>
    <div className="footer">
    <div className="support">
-   <h2>Support</h2>
+   <h3>Support</h3>
    <ul className="foot">
     {lists.map((list)=>{
         return <li className="foot-child">{list}</li>
@@ -19,7 +19,7 @@ export default function Footer()
 
    <div className="connect">
     <div>
-     <h2>Connect with us</h2>
+     <h3>Connect with us</h3>
      <div className="icon">
      <i class="fa-brands fa-instagram fa-2x"></i>
      <i class="fa-brands fa-facebook fa-2x"></i>
@@ -27,7 +27,7 @@ export default function Footer()
      </div> </div>
 
      <div className="download">
-        <h2>Download the App</h2>
+        <h3>Download the App</h3>
         <img src={google} alt="google" />
         <img src={mac} alt="mac" />
    </div>

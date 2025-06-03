@@ -7,6 +7,7 @@ const Header = (props) => {
   let navLinks = ["Home", "Movies", "Sports", "TV Shows", "More"];
   let [searchTitle, setSearchTitle] = useState("");
   let [filteredMovies, setFilteredMovies] = useState([]);
+  let [menuOpen, setMenuOpen] = useState(false); 
 
   // Use useEffect correctly (placed at the top level)
   useEffect(() => {
@@ -33,7 +34,14 @@ const Header = (props) => {
             <p>Premium</p>
           </div>
 
-          <ul>
+          
+          {/* Hamburger Icon */}
+          <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+            <i className="fa-solid fa-bars"></i>
+          </div>
+
+          
+          <ul className={`nav-links ${menuOpen ? "show" : ""}`}>
             {navLinks.map((link, index) => (
               <li key={index} className="navLink">
                 {link}
@@ -41,6 +49,9 @@ const Header = (props) => {
             ))}
           </ul>
         </div>
+
+          
+       
 
         <div className="nav-right">
           <i className="fa-solid fa-search"></i>

@@ -22,3 +22,5 @@ function App() {
       
 
 export default App;
+
+// to run use npm run dev
