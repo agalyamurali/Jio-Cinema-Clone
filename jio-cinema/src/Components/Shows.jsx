@@ -1,4 +1,4 @@
-import Show from "./show";
+import Show from "./Show";
 
 function Shows(props){
   return(
