@@ -5,7 +5,7 @@ const cors = require("cors");
 
 const app = express();
 app.use(cors());
-const port = 3000;
+const port = process.env.PORT||3000;
 
 // Path to the JSON file
 const moviesFilePath = path.join(__dirname, "movies_data.json");
@@ -23,7 +23,7 @@ function readMoviesData() {
 
 // ✅ Default route to prevent "Cannot GET /" error
 app.get("/", (req, res) => {
-  res.send("Welcome to the Movie API!");
+  res.redirect("/movies");
 });
 
 // Route to get all movies
@@ -39,5 +39,5 @@ app.listen(port, () => {
 
 // how to run ??
 // enter node index.js
-// then after entreing into locatHost change the path as '/movies'
+// then after entering into locatHost change the path as '/movies'
 
