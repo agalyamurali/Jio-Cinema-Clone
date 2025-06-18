@@ -369,3 +369,15 @@ position: relative;
     }
 
 }
+
+@media (max-width: 480px){
+    .connect{
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+}
+
