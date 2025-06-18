@@ -1,7 +1,7 @@
 import logo from "../../src/assets/jc_logo_v2.svg";
 import crown from "../../src/assets/crown.svg";
 import { useEffect, useState } from "react";
-import Show from "./show";
+import Show from "./Show";
 
 const Header = (props) => {
   let navLinks = ["Home", "Movies", "Sports", "TV Shows", "More"];
